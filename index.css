@@ -1,0 +1,143 @@
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .container .box {
+  width: 300px;
+  height: 505.5px;
+  position: relative;
+}
+body .container .box .switchA {
+  position: absolute;
+  top: 12%;
+  left: 82%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+body .container .box .switchRgb {
+  position: absolute;
+  top: 5%;
+  left: 82%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+body .container .box .clickMe {
+  position: absolute;
+  top: 19%;
+  left: 82%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+body .container .box .clickMeToo {
+  position: absolute;
+  top: 26%;
+  left: 82%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+body .container .box .head {
+  cursor: pointer;
+  height: 33.33%;
+  width: 31.67%;
+  position: absolute;
+  top: 0;
+  left: 25.83%;
+}
+body .container .box .head .tip {
+  height: 40%;
+  width: 50%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #1e96fc, #fffdf7);
+  border-radius: 5px 5px 0 0;
+}
+body .container .box .head .tipHolder {
+  height: 20%;
+  width: 70%;
+  margin: 0 auto;
+  background: linear-gradient(to top, #003049, #ff0a54);
+  border-radius: 5px 5px 0 0;
+}
+body .container .box .head .atomizer {
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(to top, #6f1d1b, #240046);
+  border-radius: 12px 12px 0 0;
+}
+body .container .box .body {
+  cursor: pointer;
+  height: 66.67%;
+  width: 68.83%;
+  background: linear-gradient(to top, #ff0054, #390099);
+  position: absolute;
+  top: 33.33%;
+  left: 15.83%;
+  border-radius: 10px 45px 20px 10px;
+  z-index: 1;
+  border-width: 2px;
+  border-color: red;
+}
+body .container .box .body .headBox {
+  top: 12.5%;
+  width: 85%;
+  border-top: 26px solid transparent !important;
+  border-left: 168px solid #ff0054;
+  position: absolute;
+  z-index: -1;
+}
+body .container .box .body .firstBox {
+  height: 60%;
+  width: 85%;
+  background: linear-gradient(to bottom, #ff0054, #390099);
+  position: absolute;
+  top: 20%;
+  border-radius: 0 10px 10px 0;
+  z-index: -1;
+}
+body .container .box .body .firstBox .babyBoxHead {
+  top: 10.3%;
+  width: 85%;
+  border-top: 17px solid transparent;
+  border-left: 108px solid #4d194d;
+  position: absolute;
+  z-index: 30;
+}
+body .container .box .body .firstBox .babyBox {
+  position: absolute;
+  height: 65%;
+  width: 65%;
+  background: linear-gradient(to bottom, #4d194d, #006466);
+  position: absolute;
+  top: 18%;
+  border-radius: 0 10px 10px 0;
+}
+body .container .box .body .firstBox .babyBoxFoot {
+  position: absolute;
+  top: 82.3%;
+  width: 85%;
+  border-bottom: 17px solid transparent;
+  border-left: 108px solid #006466;
+  position: absolute;
+}
+body .container .box .body .footBox {
+  top: 79.8%;
+  width: 85%;
+  border-bottom: 28px solid transparent;
+  border-left: 170px solid #390099;
+  position: absolute;
+  z-index: -1;
+}/*# sourceMappingURL=index.css.map */
