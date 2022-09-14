@@ -4,12 +4,15 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-
+    scroll-behavior: smooth;
+    * {
+        cursor: unset !important;
+    }
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #000;
+        background: linear-gradient(to bottom, #3a0ca3, #fefae0);
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -17,7 +20,6 @@ body {
             width:  300px;
             height: 505.5px;
             position: relative;
-
             .switchA {
                 position: absolute;
                 top: 12%;
@@ -33,7 +35,7 @@ body {
                 left: 82%;
                 cursor: pointer;
                 font-size: 20px;
-                color: #fff;
+                color: #4361ee;
             }
             .clickMe {
                 position: absolute;
@@ -41,7 +43,7 @@ body {
                 left: 82%;
                 cursor: pointer;
                 font-size: 20px;
-                color: #fff;
+                color: #ff0054;
             }
             .clickMeToo {
                 position: absolute;
@@ -49,10 +51,101 @@ body {
                 left: 82%;
                 cursor: pointer;
                 font-size: 20px;
-                color: #fff;
+                color: #4d194d;
+            }
+            .crossFather {
+                font-size: 20px;
+                color: #fec89a;
+                position: absolute;
+                top: 5%;
+                left: 91%;
+                border-radius: 50%;
+            }
+            .touch {
+                top: 45.2%;
+                left: 84%;
+                border-top: 55px solid transparent;
+                border-left: 10px solid #4d194d;
+                position: absolute;
+            }
+            .touchTwo {
+                top: 56%;
+                left: 84%;
+                border-bottom: 25px solid transparent;
+                border-left: 10px solid #4d194d;
+                position: absolute;
+            }
+            .geekVape {
+                font-size: 20px;
+                color: #000;
+                position: absolute;
+                top: 12%;
+                left: 91%;
+                border-radius: 50%;
+            }
+            .tipMe {
+                position: absolute;
+                top: 5%;
+                left: 72%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #1e96fc;
+            }
+            .tipHolderMe {
+                position: absolute;
+                top: 12%;
+                left: 72%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #ff0a54;
+            }
+            .atomizerMe {
+                position: absolute;
+                top: 19%;
+                left: 72%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #6f1d1b;
+            }
+            .bodyMe {
+                position: absolute;
+                top: 26%;
+                left: 72%;
+                cursor: pointer;
+                font-size: 20px;
+                color: #390099;
+            }
+            .triangle {
+                font-size: 20px;
+                color: #4d194d;
+                position: absolute;
+                top: 19%;
+                left: 91%;
+                border-radius: 50%;
+            }
+            .touchMe {
+                top: 80%;
+                left: 84%;
+                border-top: 30px solid transparent;
+                border-left: 10px solid #4d194d;
+                position: absolute;
+            }
+            .touchTwoMe {
+                top: 86%;
+                left: 84%;
+                border-bottom: 25px solid transparent;
+                border-left: 10px solid #4d194d;
+                position: absolute;
+            }
+            .boxes {
+                font-size: 20px;
+                color: #000;
+                position: absolute;
+                top: 26%;
+                left: 91%;
+                border-radius: 50%;
             }
             .head {
-                cursor: pointer;
                 height: 33.33%;
                 width: 31.67%;
                 position: absolute;
@@ -80,8 +173,7 @@ body {
                 }
             }
             .body {
-                cursor: pointer;
-                height: 66.67%;
+                height: 64.67%;
                 width: 68.83%;
                 background: linear-gradient(to top, #ff0054, #390099);
                 position: absolute;
@@ -89,16 +181,33 @@ body {
                 left: 15.83%;
                 border-radius: 10px 45px 20px 10px;
                 z-index: 1;
-                border-width: 2px;
-                border-color: red;
+                overflow-x: hidden;
+                border-top: 5px solid #000;
+                border-bottom: 5px solid #000;
+                .cross1, .cross2 {
+                    color: #fec89a;
+                }
+                .crossOneMother, .crossTwoMother {
+                    font-size: 18px;
+                    position: absolute;
+                    height: 13px;
+                    width: 13px;
+                    border-radius: 50%;
+                    opacity: 50%;
+                }
+                .crossOneMother {
+                    top: 5%;
+                    left: 84%;
+                }
+                .crossTwoMother {
+                    top: 90%;
+                    left: 84%;
+                }
                 .headBox {
                     top: 12.5%;
-                    width: 85%;
                     border-top: 26px solid transparent !important;
                     border-left: 168px solid #ff0054;
                     position: absolute;
-                    z-index: -1;
-
                 }
                 .firstBox {
                     height: 60%;
@@ -108,13 +217,46 @@ body {
                     top: 20%;
                     border-radius: 0 10px 10px 0;
                     z-index: -1;
+                    .cross3, .cross4 {
+                        color: #fec89a;
+                    }
+                    .crossOne, .crossTwo {
+                        font-size: 15px;
+                        position: absolute;
+                        border-radius: 50%;
+                    }
+                    .crossOne {
+                        top: 5%;
+                        left: 84%;
+                    }
+                    .crossTwo {
+                        top: 88%;
+                        left: 84%;
+                    }
+                    .geek, .vape {
+                        color: #000;
+                    }
+                    .geek, .vape {
+                        position: absolute;
+                        transform: rotate(270deg);
+                        font-size: 32px;
+                        font-family: 'Stint Ultra Condensed', cursive;
+                        left: 65%;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                    }
+                    .geek {
+                        top: 56%;
+                    }
+                    .vape {
+                        top: 26%;
+                    }
                     .babyBoxHead {
                         top: 10.3%;
-                        width: 85%;
                         border-top: 17px solid transparent;
                         border-left: 108px solid #4d194d;
                         position: absolute;
-                        z-index: 30;
+
                     }
                     .babyBox {
                             position: absolute;
@@ -128,7 +270,6 @@ body {
                     .babyBoxFoot {
                         position: absolute;
                         top: 82.3%;
-                        width: 85%;
                         border-bottom: 17px solid transparent;
                         border-left: 108px solid #006466;
                         position: absolute;
@@ -136,11 +277,9 @@ body {
                 }
                 .footBox {
                     top: 79.8%;
-                    width: 85%;
                     border-bottom: 28px solid transparent;
                     border-left: 170px solid #390099;
                     position: absolute;
-                    z-index: -1;
                 }
             }
         }
